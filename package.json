@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/butterfly-project/nodejs-fixture-generator#readme",
   "dependencies": {
-    "text-generator": "^0.2.0",
-    "lodash": "^4.13.1"
+    "text-generator": "~0.2.1",
+    "lodash": "~4.13.1"
   }
 }
