@@ -2,10 +2,12 @@
 
 var _ = require('lodash');
 var fs = require('fs');
+var textGenerator = require('text-generator');
+
 var db = {
-    firstname: JSON.parse(fs.readFileSync('text-generator/firstname.json', 'utf8')),
-    lastname: JSON.parse(fs.readFileSync('text-generator/lastname.json', 'utf8')),
-    loremipsum: JSON.parse(fs.readFileSync('text-generator/loremipsum.json', 'utf8'))
+    firstname: textGenerator('/firstname.json'),
+    lastname: textGenerator('/lastname.json'),
+    loremipsum: textGenerator('/loremipsum.json')
 };
 
 const getRandomInt = function (min, max) {
